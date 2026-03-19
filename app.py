@@ -50,7 +50,7 @@ data["group"] = kmeans.fit_predict(X)
 
 # Recommendation
 def get_weather(city):
-    api_key = st.secrets# 👈 paste your API key here
+    api_key = st.secrets["ad7b4ec6d08590029a18d5374e868345"]# 👈 paste your API key here
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     
     response = requests.get(url).json()
